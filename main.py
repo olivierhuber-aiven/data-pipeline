@@ -11,8 +11,8 @@ from order_schema import OrderType
 from product_microservice import ProductMicroserviceProvider
 from order_microservice import OrderMicroserviceProvider
 
-KAFKA_ADDR = "kafka-data-pipeline.aivencloud.com:14209"
-KAFKA_SCHEMA_REG = "https://avnadmin:AVNS_FvRqs_d98d5ulr_E-1j@kafka-data-pipeline.aivencloud.com:14212"
+KAFKA_ADDR = ""
+KAFKA_SCHEMA_REG = ""
 
 KAFKA_SSL_CA = "ca.pem"
 KAFKA_SSL_CERT = "service.cert"

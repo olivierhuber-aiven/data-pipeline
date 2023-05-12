@@ -12,9 +12,9 @@ The concrete services that are going to be used:
 The Google BigQuery public eCommerce retail fake data:
 ![Google BigQuery public data](images/bq-public-data.png)
 
-[The full 30mn recorded video (with chapters) that demonstrate all of this](https://video.aiven.io/watch/EDTGU4NXhYRcaHqTdGpkgS?)
+🎥 [The full 30mn recorded video (with chapters) that demonstrate all of this](https://video.aiven.io/watch/EDTGU4NXhYRcaHqTdGpkgS?)
 
-[The slides that support this hands-on](https://docs.google.com/presentation/d/1plMjAsLd5FfGJOJm6LiBPvBCDv3l1IPSGAolPG4f7C8/edit?usp=sharing)
+📊 [The slides that support this hands-on](https://docs.google.com/presentation/d/1plMjAsLd5FfGJOJm6LiBPvBCDv3l1IPSGAolPG4f7C8/edit?usp=sharing)
 
 # Files
 - requirements.txt
