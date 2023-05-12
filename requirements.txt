@@ -1,0 +1,5 @@
+faker
+faker-datasets
+kafka_python
+kafka_schema_registry
+dataclasses-avroschema
