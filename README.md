@@ -4,27 +4,22 @@ This material can be used as a demo and/or hands-on workshop to demonstrate in a
 The full demo can take up to ~30mn but many features can be omitted to reduce this time to ~10mn if needed
 
 The general architecture that this demo is demonstrating:
+
 ![General Architecture](images/general-architecture.png)
 
 The concrete services that are going to be used:
+
 ![Service Architecture](images/service-architecture.png)
 
-The Google BigQuery public eCommerce retail fake data:
+The Google BigQuery public eCommerce clothing fictitious data:
+
 ![Google BigQuery public data](images/bq-public-data.png)
+
+[Synthetic eCommerce and Digital Marketing dataset](https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-ecommerce)
 
 🎥 [The full 30mn recorded video (with chapters) that demonstrate all of this](https://video.aiven.io/watch/EDTGU4NXhYRcaHqTdGpkgS?)
 
 📊 [The slides that support this hands-on](https://docs.google.com/presentation/d/1plMjAsLd5FfGJOJm6LiBPvBCDv3l1IPSGAolPG4f7C8/edit?usp=sharing)
-
-# Files
-- requirements.txt
-- main.py
-- order_microservice.py
-- product_microservice.py
-- order_schema.py
-- product_schema.py
-- products.json
-- csv_to_json.py
 
 # Development/Progression
 - Start from the aiven.io main webpage and point out the Get started button
@@ -36,11 +31,11 @@ The Google BigQuery public eCommerce retail fake data:
 - Create Kafka topics, send data `python main.py` and fetch messages from the console
 - Create Kafka BigQuery connector **⏳ it's gonna take some time so move on to the next connector**
 - Create Kafka OpenSearch connector and Query the data in OS right away
-- Query data in BQ **data should be there by now** and export to Looker (just 1 click)
+- Query data in BQ (*data should be there by now*), and export to Looker (just 1 click)
 - Integrate Kafka metrics to InfluxDB+Grafana **⏳ it's gonna take some time so move on to the next integration**
 - Integrate Kafka logs to the running OS service and demo Query the logs right away
 - Bump OS version (while logs are flowing to demonstrate the zero downtime)
-- Query the metrics in Grafana **data should be there by now**
+- Query the metrics in Grafana (*data should be there by now*)
   - If Grafana is still not up by that time, **💡 Show the Kafka Service “Quick connect” button**
 - Introduce Flink (with the Carbon Footprint new field) to finish that off 🫳🎤
 
@@ -65,6 +60,16 @@ avn user login --token
 avn service user-creds-download --project data-pipeline --username avnadmin kafka
 pip install -r requirements.txt
 ```
+
+# Files
+- main.py - **main file to run with python after setting the Kafka URI and Schema Registry URI**
+- requirements.txt
+- order_microservice.py
+- product_microservice.py
+- order_schema.py - **Order Avro schema**
+- product_schema.py - **Product Avro schema**
+- products.json - **fictious clothing products generated from products.csv (dataset) with csv_to_json.py**
+- csv_to_json.py - **converts products.csv file (present in the fictious dataset) to json**
 
 # Todo
 - [ ] Add the flink demo to the hands-on slides
