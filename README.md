@@ -65,14 +65,14 @@ pip install -r requirements.txt
 ```
 
 # Files
-- main.py - **main file to run with python after setting the Kafka URI and Schema Registry URI**
-- requirements.txt
-- order_microservice.py
-- product_microservice.py
-- order_schema.py - **Order Avro schema**
-- product_schema.py - **Product Avro schema**
-- products.json - **fictious clothing products generated from products.csv (dataset) with csv_to_json.py**
-- csv_to_json.py - **converts products.csv file (present in the fictious dataset) to json**
+- `main.py` - *main file to run with python after setting the Kafka URI and Schema Registry URI*
+- `requirements.txt` - *project Python dependencies*
+- `order_microservice.py` - *make orders*
+- `product_microservice.py` - *make products*
+- `order_schema.py` - *Order Avro schema*
+- `product_schema.py` - *Product Avro schema*
+- `products.json` - *fictious clothing products generated from products.csv (dataset) with csv_to_json.py*
+- `csv_to_json.py` - *converts products.csv file (that was present in the fictious dataset) to json*
 
 # Todo
 - [ ] Add the flink demo to the hands-on slides
