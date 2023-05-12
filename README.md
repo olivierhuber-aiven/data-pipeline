@@ -21,7 +21,8 @@ The Google BigQuery public eCommerce clothing fictitious data:
 
 📊 [The slides that support this hands-on](https://docs.google.com/presentation/d/1plMjAsLd5FfGJOJm6LiBPvBCDv3l1IPSGAolPG4f7C8/edit?usp=sharing)
 
-# Development/Progression
+# Steps
+## Main demo ⏱️ ~10mn
 - Start from the aiven.io main webpage and point out the Get started button
 - Create a Kafka **💡 rename the service simply "kafka", "os", "flink"**
   - Go through the Overview tab (explain each config)
@@ -32,11 +33,13 @@ The Google BigQuery public eCommerce clothing fictitious data:
 - Create Kafka BigQuery connector **⏳ it's gonna take some time so move on to the next connector**
 - Create Kafka OpenSearch connector and Query the data in OS right away
 - Query data in BQ (*data should be there by now*), and export to Looker (just 1 click)
+## Optional ⏱️ ~10mn
 - Integrate Kafka metrics to InfluxDB+Grafana **⏳ it's gonna take some time so move on to the next integration**
 - Integrate Kafka logs to the running OS service and demo Query the logs right away
 - Bump OS version (while logs are flowing to demonstrate the zero downtime)
 - Query the metrics in Grafana (*data should be there by now*)
   - If Grafana is still not up by that time, **💡 Show the Kafka Service “Quick connect” button**
+## Optional ⏱️ ~10mn
 - Introduce Flink (with the Carbon Footprint new field) to finish that off 🫳🎤
 
 # Prerequisites
