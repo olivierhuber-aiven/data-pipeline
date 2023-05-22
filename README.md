@@ -75,5 +75,5 @@ pip install -r requirements.txt
 - `csv_to_json.py` - *converts products.csv file (that was present in the fictious dataset) to json*
 
 # Todo
-- [ ] Add the flink demo to the hands-on slides
+- [x] Add the flink demo to the hands-on slides
 - [ ] Create the Terraform script
